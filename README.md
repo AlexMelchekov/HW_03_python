@@ -1,0 +1,38 @@
+# Парсер каталога книг books.toscrape.com
+
+## Цель проекта
+
+Учебный проект для автоматизированного сбора информации о книгах
+с учебного сайта [books.toscrape.com](https://books.toscrape.com).
+
+Парсер обходит каталог по страницам пагинации, заходит на страницу
+каждой книги и собирает:
+
+- название
+- цену
+- рейтинг
+- количество в наличии
+- описание
+- характеристики из таблицы Product Information (UPC, тип товара,
+  цены без и с налогом, налог, число отзывов и т. д.)
+
+Результат сохраняется в файл `books_data.txt`, если необходимо.
+
+## Структура проекта
+
+  ├── artifacts/
+  │   └── books_data.txt
+  ├── notebooks/
+  │   └── HW_03_python_ds_2025.ipynb
+  ├── tests/
+  │   └── test_scraper.py
+  ├── scraper.py
+  ├── README.md
+  ├── .gitignore
+  └── requirements.txt
+
+## Инструкция по запуску
+
+1. Установка зависимостей ```pip install -r requirements.txt```
+2. Разовый запуск ```python scraper.py```
+3. Запуск тестов ```pytest tests/test_scraper.py -v```
