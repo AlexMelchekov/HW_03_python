@@ -20,7 +20,7 @@
 
 ## Структура проекта
 
-
+```
   ├── artifacts/
   │   └── books_data.txt
   ├── notebooks/
@@ -31,7 +31,7 @@
   ├── README.md
   ├── .gitignore
   └── requirements.txt
-
+```
 
 ## Инструкция по запуску
 
